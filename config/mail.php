@@ -12,12 +12,17 @@ return [
     | your application here. By default, Laravel is setup for SMTP mail.
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Supported: "smtp", "sendmail", "mailgun", "ses",
     |            "postmark", "log", "array"
 =======
     | Supported: "smtp", "sendmail", "mailgun", "mandrill", "ses",
     |            "sparkpost", "postmark", "log", "array"
 >>>>>>> cefefbe5c21983bc3b7680f59d15eb2d99096e04
+=======
+    | Supported: "smtp", "sendmail", "mailgun", "mandrill", "ses",
+    |            "sparkpost", "postmark", "log", "array"
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
     |
     */
 
