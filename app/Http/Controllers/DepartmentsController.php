@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use App\Department;
 
 class DepartmentsController extends Controller
 {
@@ -13,7 +15,8 @@ class DepartmentsController extends Controller
      */
     public function index()
     {
-        //
+        $depts=Department::all();
+        return view('department.index')->with('depts',$depts);
     }
 
     /**
@@ -23,7 +26,7 @@ class DepartmentsController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
