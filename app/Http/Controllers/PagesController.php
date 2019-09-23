@@ -12,4 +12,12 @@ class PagesController extends Controller
     public function about(){
         return view('pages/about');
     }
+    public function dindex()
+    {
+        return view('department/index');
+    }
+    public function mindex()
+    {
+        return view('department/team/index');
+    }
 }
