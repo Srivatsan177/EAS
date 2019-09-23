@@ -27,3 +27,4 @@ Route::get('/departments/{dept_id}/teams/','TeamsController@index');
 Route::get('/departments/{dept_id}/teams/create','TeamsController@create');
 
 Route::post('/departments/{dept_id}/teams/store','TeamsController@store');
+Route::get('user',                   [ 'as'=>'user',                 'uses' => 'UsersController@index']);

@@ -9,6 +9,7 @@ use App\Department;
 use App\Team;
 use App\User;
 use App\TeamMember;
+use App\Rateable;
 
 class TeamsController extends Controller
 {
@@ -56,6 +57,31 @@ class TeamsController extends Controller
     }
 
     public function viewMembers(){
+
+    }
+    public function rate(Request $request)
+
+    {
+
+        request()->validate(['rate' => 'required']);
+
+        $task = Team::find($request->id);
+
+
+
+        $rating = new \willvincent\Rateable\Rating;
+
+        $rating->rating = $request->rate;
+
+        $rating->user_id = auth()->user()->id;
+
+
+
+        $team->rating()->save($rating);
+
+
+
+        return redirect()->route("teams");
 
     }
 }

@@ -28,7 +28,12 @@
                         <strong>{{$dept_head[$i]->name}}</strong>
                     </div>
                     <div class="col-md-4">
-                        <a href="/departments/{{$depts[$i]->dept_id}}/teams" class="btn btn-primary">View</a>
+                        <a href="/departments/{{$depts[$i]->dept_id}}/teams" class="btn btn-primary">Viewcc</a>
+                    </div>
+                    <div>
+
+                        {{-- <a href="{{ route('posts.show',$team->id) }}" class="btn btn-primary btn-sm">View Rating</a> --}}
+
                     </div>
                 </div>
                 <br>
