@@ -9,4 +9,6 @@ class Team extends Model
     protected $table='teams';
 
     public $primaryKey='team_id';
+
+    // public $timestamps=false;
 }

@@ -21,6 +21,15 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/departments','DepartmentsController');
+<<<<<<< HEAD
 Route::resource('/user','UsersController');
 Route::resource('/user/create','UsersController@create');
 
+=======
+
+Route::get('/departments/{dept_id}/teams/','TeamsController@index');
+
+Route::get('/departments/{dept_id}/teams/create','TeamsController@create');
+
+Route::post('/departments/{dept_id}/teams/store','TeamsController@store');
+>>>>>>> 858badd2d49bfa631f2de6a92841cb5de1046024
