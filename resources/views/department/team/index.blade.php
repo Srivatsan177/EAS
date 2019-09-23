@@ -2,36 +2,24 @@
 
 @section('content')
     <div class="container">
-        <a href="/departments/{{$dept_id}}/teams/create" class="btn btn-primary">Create Team</a>
-        <br>
-        <br>
+        <table class="table table-striped">
         @if (count($teams)>0)
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Team Name</h2>
-                </div>
-                <div class="col-md-4">
-                    <h2>Leader</h2>
-                </div>
-                <div class="col-md-4">
-                    <h2>View</h2>
-                </div>
-            </div>
-            <br>
+                <th><tr>Team Name</tr></th>
+                <th><tr>Leader</tr></th>
+                <th><tr>View</tr></th>
             @for ($i = 0; $i < count($teams); $i++)
                 <div class="row">
                     <div class="col-md-4">
-                        <strong>{{$teams[$i]->team_name}}</strong>
+                        <tr><td>{{$teams[$i]->team_name}}</td>
                     </div>
                     <div class="col-md-4">
-                        <strong>{{$team_heads[$i]->name}}</strong>
+                        <td>{{$team_heads[$i]->name}}</td>
                     </div>
                     <div class="col-md-4">
-                        <a href="/departments/{{$dept_id}}/teams/{{$teams[$i]->team_id}}/" class="btn btn-primary">View</a>
+                        <td><a href="/departments/{{$dept_id}}/teams/{{$teams[$i]->team_id}}/" class="btn btn-primary">View</a></td></tr>
                     </div>
-                </div>
-                <br><br>
             @endfor
+        </table>
         @else
             <h1>No Teams</h1>
         @endif
