@@ -77,9 +77,19 @@
                 
                                             <div class="col-md-6">
                                                 <select id="role" type="text" class="form-control{{ $errors->has('role') ? ' is-invalid' : '' }}" name="role" value="{{ old('role') }}" required autofocus>
+                                                    @if(Auth::user()->role==0)
                                                     <option value="1">Department Head</option>
                                                     <option value="2">Team Head</option>
                                                     <option value="3">Member</option>
+                                                    @elseif(Auth::user()->role==1)
+                                                    
+                                                    <option value="2">Team Head</option>
+                                                    <option value="3">Member</option>
+                                                    @elseif(Auth::user()->role==2)
+                                                    
+                                                   
+                                                    <option value="3">Member</option>
+                                                    @endif
                                                 </select>
                                                 @if ($errors->has('role'))
                                                     <span class="invalid-feedback" role="alert">

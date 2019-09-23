@@ -9,7 +9,7 @@ use App\Department;
 use App\Team;
 use App\User;
 use App\TeamMember;
-use App\Rateable;
+use App\MemberRecord;
 
 class TeamsController extends Controller
 {
@@ -56,32 +56,35 @@ class TeamsController extends Controller
         }
     }
 
-    public function viewMembers(){
-
+    public function viewMembers($dept_id,$team_id){
+        // return $dept_id;
+        $teams=Team::select()->where('team_id',$team_id)->get();
+        $team_members=TeamMember::select()->where('team_id',$team_id)->get();
+        $users=array();
+        foreach($team_members as $team_member){
+            array_push($users,User::find($team_member->uid));
+        }
+        return view('department.team.view_member')->with('users',$users)->with('team_members',$team_members)->with('dept_id',$dept_id)->with('team_id',$team_id);
     }
-    public function rate(Request $request)
 
-    {
-
-        request()->validate(['rate' => 'required']);
-
-        $task = Team::find($request->id);
-
-
-
-        $rating = new \willvincent\Rateable\Rating;
-
-        $rating->rating = $request->rate;
-
-        $rating->user_id = auth()->user()->id;
-
-
-
-        $team->rating()->save($rating);
-
-
-
-        return redirect()->route("teams");
-
+    public function addMembers($dept_id,$team_id){
+        return view('department.team.add_member')->with('dept_id',$dept_id)->with('team_id',$team_id);
     }
+
+    public function storeMember(Request $request,$dept_id,$team_id){
+        $this->validate($request,[
+            'email'=>'required'
+        ]);
+        $user=User::select()->where('email',$request->input('email'))->get();
+        if(count($user)<0){
+            return redirect()->back();
+        }
+        // return $user;
+        $team_member=new TeamMember;
+        $team_member->team_id=$team_id;
+        $team_member->uid=$user[0]->id;
+        $team_member->save();
+        return redirect()->back();
+    }
+    
 }

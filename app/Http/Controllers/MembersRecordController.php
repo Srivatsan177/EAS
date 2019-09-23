@@ -1,10 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\User;
+
 use Illuminate\Http\Request;
-use Hash;
-class UsersController extends Controller
+use App\Department;
+use App\Team;
+use App\User;
+use App\TeamMember;
+use App\MemberRecord;
+
+class MembersRecordController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,9 +18,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $users= User::all();
-
-        return view('user.index');
+        $users=User::all();
     }
 
     /**
@@ -23,42 +26,9 @@ class UsersController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-   
-    // public function __construct()
-    // {
-    //     $this->middleware('guest');
-    // }
-
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    // protected function validator(array $data)
-    // {
-    //     return Validator::make($data, [
-    //         'name' => ['required', 'string', 'max:255'],
-    //         'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-    //         'password' => ['required', 'string', 'min:8', 'confirmed'],
-    //         'role'=>['required','integer'],
-    //     ]);
-    // }
-
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return \App\User
-     */
-    protected function create(array $data)
+    public function create()
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-            'role' => $data['role'],
-        ]);
+        return view('department.team.add_rating');
     }
 
     /**
@@ -69,18 +39,9 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        // $this->validate($request,[
-        //     'email'=>'required',
-        //     'name'=>'required'
-        // ]);
-        // $member=User::select()->where('email',$request->input('email'))->get();
-        // // dd($request->input('head_mail'));
-        // // dd($member[0]);
-        // if(count($member)<1){
-        //     return redirect('/departments/create');
-        // }
-        // else{
-            $user_name=$request->input('name');
+        $user = Auth::user();
+        $id=Auth::id();
+        $user_name=$request->input('name');
             $user_email=$request->input('email');
             $user=new User;
             $user->name=$user_name;
@@ -89,7 +50,6 @@ class UsersController extends Controller
             $user->password = Hash::make($request->input('password'));
             $user->save();
             return redirect('/user');
-        //}
     }
 
     /**

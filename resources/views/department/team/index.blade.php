@@ -27,8 +27,9 @@
                         <strong>{{$team_heads[$i]->name}}</strong>
                     </div>
                     <div class="col-md-4">
-                        <a href="#" class="btn btn-primary">View</a>
+                        <a href="/departments/{{$dept_id}}/teams/{{$teams[$i]->team_id}}/" class="btn btn-primary">View</a>
                     </div>
+                    
                 </div>
                 <br><br>
             @endfor
