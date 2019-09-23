@@ -2,7 +2,7 @@
 @section('content')
     <div class="container">
         @csrf
-        <form action="" >
+        <form action="" class="form-group">
             <label for="name">Name : </label>
             <input type="text" placeholder="Enter name here">
             <label for="email">Email ID : </label>
