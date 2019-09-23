@@ -56,6 +56,6 @@ class TeamsController extends Controller
     }
 
     public function viewMembers(){
-
+        
     }
 }
