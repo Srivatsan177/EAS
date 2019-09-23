@@ -470,6 +470,21 @@
         },
         {
             "name": "laravel/framework",
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "version": "v6.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "56789e9dec750e0fbe8e9e6ae90a01a4e6887902"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/56789e9dec750e0fbe8e9e6ae90a01a4e6887902",
+                "reference": "56789e9dec750e0fbe8e9e6ae90a01a4e6887902",
+=======
+=======
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
             "version": "v5.8.35",
             "source": {
                 "type": "git",
@@ -480,25 +495,63 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/5a9e4d241a8b815e16c9d2151e908992c38db197",
                 "reference": "5a9e4d241a8b815e16c9d2151e908992c38db197",
+<<<<<<< HEAD
+>>>>>>> cefefbe5c21983bc3b7680f59d15eb2d99096e04
+=======
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^1.1",
                 "dragonmantank/cron-expression": "^2.0",
+<<<<<<< HEAD
+<<<<<<< HEAD
+                "egulias/email-validator": "^2.1.10",
+=======
                 "egulias/email-validator": "^2.0",
+>>>>>>> cefefbe5c21983bc3b7680f59d15eb2d99096e04
+=======
+                "egulias/email-validator": "^2.0",
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
                 "erusev/parsedown": "^1.7",
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
                 "league/flysystem": "^1.0.8",
+<<<<<<< HEAD
+<<<<<<< HEAD
+                "monolog/monolog": "^1.12|^2.0",
+                "nesbot/carbon": "^2.0",
+                "opis/closure": "^3.1",
+                "php": "^7.2",
+=======
+=======
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
                 "monolog/monolog": "^1.12",
                 "nesbot/carbon": "^1.26.3 || ^2.0",
                 "opis/closure": "^3.1",
                 "php": "^7.1.3",
+<<<<<<< HEAD
+>>>>>>> cefefbe5c21983bc3b7680f59d15eb2d99096e04
+=======
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
                 "psr/container": "^1.0",
                 "psr/simple-cache": "^1.0",
                 "ramsey/uuid": "^3.7",
                 "swiftmailer/swiftmailer": "^6.0",
+<<<<<<< HEAD
+<<<<<<< HEAD
+                "symfony/console": "^4.3.4",
+                "symfony/debug": "^4.3.4",
+                "symfony/finder": "^4.3.4",
+                "symfony/http-foundation": "^4.3.4",
+                "symfony/http-kernel": "^4.3.4",
+                "symfony/process": "^4.3.4",
+                "symfony/routing": "^4.3.4",
+                "symfony/var-dumper": "^4.3.4",
+=======
+=======
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
                 "symfony/console": "^4.2",
                 "symfony/debug": "^4.2",
                 "symfony/finder": "^4.2",
@@ -507,6 +560,10 @@
                 "symfony/process": "^4.2",
                 "symfony/routing": "^4.2",
                 "symfony/var-dumper": "^4.2",
+<<<<<<< HEAD
+>>>>>>> cefefbe5c21983bc3b7680f59d15eb2d99096e04
+=======
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
                 "tijsverkoyen/css-to-inline-styles": "^2.2.1",
                 "vlucas/phpdotenv": "^3.3"
             },
@@ -586,7 +643,15 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    "dev-master": "6.x-dev"
+=======
                     "dev-master": "5.8-dev"
+>>>>>>> cefefbe5c21983bc3b7680f59d15eb2d99096e04
+=======
+                    "dev-master": "5.8-dev"
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
                 }
             },
             "autoload": {
@@ -614,7 +679,15 @@
                 "framework",
                 "laravel"
             ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "time": "2019-09-10T18:46:24+00:00"
+=======
             "time": "2019-09-03T16:44:30+00:00"
+>>>>>>> cefefbe5c21983bc3b7680f59d15eb2d99096e04
+=======
+            "time": "2019-09-03T16:44:30+00:00"
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
         },
         {
             "name": "laravel/tinker",
@@ -839,7 +912,15 @@
                 "logging",
                 "psr-3"
             ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "time": "2019-08-30T09:56:44+00:00"
+=======
             "time": "2019-09-06T13:49:17+00:00"
+>>>>>>> cefefbe5c21983bc3b7680f59d15eb2d99096e04
+=======
+            "time": "2019-09-06T13:49:17+00:00"
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
         },
         {
             "name": "nesbot/carbon",
@@ -2894,6 +2975,34 @@
     ],
     "packages-dev": [
         {
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "name": "doctrine/instantiator",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/instantiator.git",
+                "reference": "a2c590166b2133a4633738648b6b064edae0814a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/a2c590166b2133a4633738648b6b064edae0814a",
+                "reference": "a2c590166b2133a4633738648b6b064edae0814a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^6.0",
+                "ext-pdo": "*",
+                "ext-phar": "*",
+                "phpbench/phpbench": "^0.13",
+                "phpstan/phpstan-phpunit": "^0.11",
+                "phpstan/phpstan-shim": "^0.11",
+=======
+=======
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
             "name": "beyondcode/laravel-dump-server",
             "version": "1.3.0",
             "source": {
@@ -2916,6 +3025,10 @@
             },
             "require-dev": {
                 "larapack/dd": "^1.0",
+<<<<<<< HEAD
+>>>>>>> cefefbe5c21983bc3b7680f59d15eb2d99096e04
+=======
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
                 "phpunit/phpunit": "^7.0"
             },
             "type": "library",
@@ -2997,6 +3110,25 @@
             ],
             "authors": [
                 {
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://flareapp.io",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Solution contracts for Ignition",
+            "homepage": "https://github.com/facade/ignition-contracts",
+            "keywords": [
+                "contracts",
+                "flare",
+                "ignition"
+            ],
+            "time": "2019-08-30T14:06:08+00:00"
+=======
+=======
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
                     "name": "Marco Pivetta",
                     "email": "ocramius@gmail.com",
                     "homepage": "http://ocramius.github.com/"
@@ -3009,6 +3141,10 @@
                 "instantiate"
             ],
             "time": "2019-03-17T17:37:11+00:00"
+<<<<<<< HEAD
+>>>>>>> cefefbe5c21983bc3b7680f59d15eb2d99096e04
+=======
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
         },
         {
             "name": "filp/whoops",
@@ -3663,6 +3799,21 @@
         },
         {
             "name": "phpunit/php-code-coverage",
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "version": "7.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
+                "reference": "aa0d179a13284c7420fc281fc32750e6cc7c9e2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/aa0d179a13284c7420fc281fc32750e6cc7c9e2f",
+                "reference": "aa0d179a13284c7420fc281fc32750e6cc7c9e2f",
+=======
+=======
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
             "version": "6.1.4",
             "source": {
                 "type": "git",
@@ -3673,6 +3824,10 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/807e6013b00af69b6c5d9ceb4282d0393dbb9d8d",
                 "reference": "807e6013b00af69b6c5d9ceb4282d0393dbb9d8d",
+<<<<<<< HEAD
+>>>>>>> cefefbe5c21983bc3b7680f59d15eb2d99096e04
+=======
+>>>>>>> 6e726a7cfb58e12391cfb335a6d37c9ca92acf1d
                 "shasum": ""
             },
             "require": {
