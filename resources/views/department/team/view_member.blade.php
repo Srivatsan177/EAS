@@ -21,6 +21,7 @@
                         <a href="#" class="btn btn-primary">View Details</a>                        
                     </div>
                 </div>
+                <br>
             @endfor
         </div>
     </div>
