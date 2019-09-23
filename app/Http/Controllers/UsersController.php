@@ -88,7 +88,7 @@ class UsersController extends Controller
             $user->email = $user_email;
             $user->password = Hash::make($request->input('password'));
             $user->save();
-            return redirect('/user');
+            return redirect('/home');
         //}
     }
 

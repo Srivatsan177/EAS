@@ -21,10 +21,10 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'EAS') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -72,9 +72,26 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" style="margin-bottom:425px;">
             @yield('content')
         </main>
+        <footer class="footer bg-dark text-light" style="padding-top: 2%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>EAS</h2>
+                        <h3>ZAP Private LTD.</h3>
+                    </div>
+                    <div class="col-md-4">
+                            <a href="#" class="text-light">Contact Us</a>
+                            <br>
+                            <a href="#"><i class="fa fa-lg fa-facebook-square"></i></a>
+                            <a href="#"><i class="fa fa-lg fa-twitter-square"></i></a>
+                            <a href="#"><i class="fa fa-lg fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

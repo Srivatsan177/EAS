@@ -27,7 +27,7 @@
             <br>
             <input type="submit" class="btn btn-primary">
         </form> --}}
-    <form action="/departments/{{$dept_id}}/teams/{{$team_id}}/{{$users[$i]->id}}/store_rating" method="POST">
+    <form action="/departments/{{$dept_id}}/teams/{{$team_id}}/{{$user_id}}/store_rating" method="POST">
             @csrf
             <label>Task id:</label>
             <input type="text" name="task" class="form-control">

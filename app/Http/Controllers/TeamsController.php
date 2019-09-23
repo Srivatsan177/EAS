@@ -86,5 +86,28 @@ class TeamsController extends Controller
         $team_member->save();
         return redirect()->back();
     }
+
+    public function memberDetails($dept_id,$team_id,$user_id){
+        $user=User::find($user_id);
+        $records=MemberRecord::select()->where('uid',$user_id)->get();
+        return view('department.team.show')->with('dept_id',$dept_id)->with('team_id',$team_id)->with('user',$user)->with('records',$records);
+        return $user_id;
+    }
+
+    public function createRating($dept_id,$team_id,$user_id){
+        return view('department.team.create_rating')->with('dept_id',$dept_id)->with('team_id',$team_id)->with('user_id',$user_id);
+    }
+
+    public function storeRating(Request $request,$dept_id,$team_id,$user_id){
+        $member_record=new MemberRecord;
+        $member_record->uid=$user_id;
+        $member_record->team_head_id=Auth::user()->id;
+        $member_record->task=$request->input('task');
+        $member_record->comment=$request->input('comment');
+        $member_record->rating=$request->input('rating');
+        $member_record->team_id=$team_id;
+        $member_record->save();
+        return redirect()->back();
+    }
     
 }

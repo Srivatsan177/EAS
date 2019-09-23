@@ -24,6 +24,7 @@
                     <br>
                     
                 </div>
+                <br>
             @endfor
         </div>
     </div>

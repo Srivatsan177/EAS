@@ -18,6 +18,12 @@ class MembersRecordController extends Controller
      */
     public function index()
     {
+        $teams=Team::select()->where('team_id',$team_id)->get();
+        $team_members=TeamMember::select()->where('team_id',$team_id)->get();
+        $users=array();
+        foreach($team_members as $team_member){
+            array_push($users,User::find($team_member->uid));
+        }
         $users=User::all();
     }
 
@@ -28,7 +34,8 @@ class MembersRecordController extends Controller
      */
     public function create()
     {
-        return view('department.team.add_rating');
+        $users=User::all();
+        return view('department.team.add_rating')->with('users',$users)->with('dept_id',$dept_id);
     }
 
     /**

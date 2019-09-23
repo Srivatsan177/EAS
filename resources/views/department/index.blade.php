@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="jumbotron">
         <div class="col-md-6">
             <a href="/departments/create" class="btn btn-primary">Create Department</a>
         </div>
