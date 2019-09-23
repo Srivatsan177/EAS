@@ -9,6 +9,8 @@ Auth::routes();
 
 Route::get('/index', 'PagesController@index')->name('home');
 
+Route::get('/home','HomeController@index')->name('home');
+
 Route::resource('/departments','DepartmentsController');
 
 Route::get('/departments/{dept_id}/teams/','TeamsController@index');
