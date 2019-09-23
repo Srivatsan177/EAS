@@ -7,7 +7,7 @@ Route::get('/', function () {
 Auth::routes();
 
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/index', 'PagesController@index')->name('home');
 
 Route::resource('/departments','DepartmentsController');
 
